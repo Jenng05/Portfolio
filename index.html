@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenny Nguyen | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Jenny Nguyen</h1>
+        <p class="subtitle">Frontend Development Student</p>
+
+        <div class="header-actions">
+          <!-- Disse kan du fylle inn senere -->
+          <a class="btn btn-primary" href="#" target="_blank" rel="noopener"
+            >Download CV</a
+          >
+          <a class="btn btn-ghost" href="#" target="_blank" rel="noopener"
+            >Cover Letter</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <h2>About Me</h2>
+        <p class="muted">
+          I’m a Frontend Development student focused on building structured,
+          responsive web experiences. My approach combines visual identity,
+          layout consistency, and improving JavaScript functionality. I’m
+          especially motivated by projects where design and logic meet.
+        </p>
+      </section>
+      <section class="section">
+        <h2>Projects</h2>
+        <p class="muted">
+          A selection of school projects showcasing my progression from HTML/CSS
+          to JavaScript.
+        </p>
+
+        <div class="grid">
+          <!-- Card 1 -->
+          <article class="card">
+            <img
+              src="assets/images/rainy-js.png"
+              alt="Rainy Days JavaScript project preview"
+            />
+            <h3>Rainy Days (JavaScript)</h3>
+            <p>
+              Enhanced e-commerce site with a product preview flow and cart
+              popup built using Vanilla JavaScript.
+            </p>
+
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <div class="card-actions">
+              <a
+                class="btn btn-primary"
+                href="https://jenng05.github.io/JS1/"
+                target="_blank"
+                rel="noopener"
+                >Live Demo</a
+              >
+              <a
+                class="btn btn-ghost"
+                href="https://github.com/Jenng05/JS1"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <img
+              src="assets/images/rainy-html-css.png"
+              alt="Rainy Days HTML & CSS project preview"
+            />
+            <h3>Rainy Days (HTML & CSS)</h3>
+            <p>
+              Responsive e-commerce website built with semantic HTML and
+              structured CSS layout.
+            </p>
+
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+
+            <div class="card-actions">
+              <a
+                class="btn btn-primary"
+                href="https://jenng05.github.io/html-css-jenny-nguyen/"
+                target="_blank"
+                rel="noopener"
+                >Live Demo</a
+              >
+              <a
+                class="btn btn-ghost"
+                href="https://github.com/Jenng05/html-css-jenny-nguyen"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <img
+              src="assets/images/semester-project.png"
+              alt="Semester Project custom design preview"
+            />
+            <h3>Semester Project (Custom Design)</h3>
+            <p class="highlight">Personal Highlight</p>
+            <p>
+              Custom-designed website with self-developed branding and
+              responsive layout built with HTML and CSS.
+            </p>
+
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+
+            <div class="card-actions">
+              <a
+                class="btn btn-primary"
+                href="https://jenng05.github.io/SP1/"
+                target="_blank"
+                rel="noopener"
+                >Live Demo</a
+              >
+              <a
+                class="btn btn-ghost"
+                href="https://github.com/Jenng05/SP1"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="muted">© <span id="year"></span> Jenny Nguyen</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

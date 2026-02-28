@@ -1,0 +1,135 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  color: #111;
+  background: #fafafa;
+}
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  padding: 90px 0 60px;
+  background: linear-gradient(to bottom, #a1a1a1, #f6f6f6);
+  border-bottom: 1px solid #eee;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: #555;
+}
+
+.header-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.section {
+  padding: 32px 0 48px;
+}
+
+h1 { margin: 0; font-size: 2rem; }
+h2 { margin: 0 0 10px; }
+h3 { margin: 0 0 8px; }
+
+.muted { color: #666; }
+
+.grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tags {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tags li {
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f1f1f1;
+}
+
+.card-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #111;
+  color: white;
+}
+
+.btn-ghost {
+  background: transparent;
+  border-color: #9b9b9b;
+  color: #111;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.site-footer {
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  background: white;
+}
+
+.highlight {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #111;
+  background: #e8e8e8;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}
